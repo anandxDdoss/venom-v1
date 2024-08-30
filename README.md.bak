@@ -21,10 +21,9 @@ This repository contains a Telegram bot designed to perform DDoS attacks. The bo
 
 ### Installation
 
-1. Clone the repository:
+1. Clone the repository
 
-   ```sh
-   git clone https://github.com/yourusername/ddos-attack-bot.git
+  
    cd ddos-attack-bot
    ```
 
@@ -118,7 +117,7 @@ If you wish to contribute to this project, feel free to submit a pull request or
 
 ## Contact
 
-For any queries or support, contact [venomXcrazy](https://t.me/venomXcrazy) on Telegram. 
+For any queries or support, contact @EXR_ICONIC on Telegram. 
 
 ---
 
