@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7108732327:AAH0TZSBzHgYcjyY6N4znu6KLtQzSYVusbM')
+bot = telebot.TeleBot('7334142227:AAHGpsDcaeq12ss2th666ruYIMvLCflcCGw')
 
 # Admin user IDs
-admin_id = ["6087008259"]
+admin_id = ["1197720408"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -136,7 +136,7 @@ def add_user(message):
                 if time_unit not in ('hour', 'hours', 'day', 'days', 'week', 'weeks', 'month', 'months'):
                     raise ValueError
             except ValueError:
-                response = "Invalid duration format. Please provide a positive integer followed by 'hour(s)', 'day(s)', 'week(s)', or 'month(s)'."
+                response = "Invalid duration format. Areee Bhosdike Please provide a positive integer followed by 'hour(s)', 'day(s)', 'week(s)', or 'month(s)'."
                 bot.reply_to(message, response)
                 return
 
@@ -145,15 +145,15 @@ def add_user(message):
                 with open(USER_FILE, "a") as file:
                     file.write(f"{user_to_add}\n")
                 if set_approval_expiry_date(user_to_add, duration, time_unit):
-                    response = f"User {user_to_add} added successfully for {duration} {time_unit}. Access will expire on {user_approval_expiry[user_to_add].strftime('%Y-%m-%d %H:%M:%S')} 👍."
+                    response = f"User {user_to_add} Ye gandu added hogya hai successfully for {duration} {time_unit}. Access will expire on {user_approval_expiry[user_to_add].strftime('%Y-%m-%d %H:%M:%S')} 👍."
                 else:
                     response = "Failed to set approval expiry date. Please try again later."
             else:
                 response = "User already exists 🤦‍♂️."
         else:
-            response = "Please specify a user ID and the duration (e.g., 1hour, 2days, 3weeks, 4months) to add 😘."
+            response = "Aree Maaa ka Bhosdaa specify a user ID and the duration (e.g., 1hour, 2days, 3weeks, 4months) to add 😘."
     else:
-        response = "You have not purchased yet purchase now from:- @EXR_ICONIC."
+        response = "Bsdk kharidaa nhi aur bhadwee usee krega ddos bhaag yaha se aur kharid isse:- @EXR_ICONIC."
 
     bot.reply_to(message, response)
 
@@ -182,14 +182,14 @@ def remove_user(message):
                 with open(USER_FILE, "w") as file:
                     for user_id in allowed_user_ids:
                         file.write(f"{user_id}\n")
-                response = f"User {user_to_remove} removed successfully 👍."
+                response = f"User {user_to_remove} Gand maaraaa gya hai successfully 👍."
             else:
                 response = f"User {user_to_remove} not found in the list ❌."
         else:
-            response = '''Please Specify A User ID to Remove. 
+            response = '''Bsdk kisko remove karegaa. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "You have not purchased yet purchase now from:- @Anand Dallaa😁 🙇."
+        response = "Bsdk kharidaa nhi aur bhadwee usee krega ddos bhaag yaha se aur kharid isse:- @Anand Dallaa😁 🙇."
 
     bot.reply_to(message, response)
 
@@ -208,7 +208,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "You have not purchased yet purchase now from :- Anand Dallaa😁❄."
+        response = "Bsdk kharidaa nhi aur bhadwee usee krega ddos bhaag yaha se aur kharid isse :- Anand Dallaa😁❄."
     bot.reply_to(message, response)
 
 
@@ -279,7 +279,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, 𝐀𝐓𝐓𝐀𝐂𝐊 𝐒𝐓𝐀𝐑𝐓𝐄𝐃.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: VIP- User of @Anand Dallaa😁"
+    response = f"{username}, Server Ka Gaand Marnaa suru hogya💀.🔥🔥\n\n𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n𝐏𝐨𝐫𝐭: {port}\n𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n𝐌𝐞𝐭𝐡𝐨𝐝: Lauda- User of @Anand Dallaa😁"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /bgmi command
@@ -320,7 +320,7 @@ def handle_bgmi(message):
         else:
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
-        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi command. DM TO BUY ACCESS:- @Anand Dallaa😁")
+        response = ("🚫 Unauthorized Access! 🚫\n\nBsdk kharidaa nhi aur bhadwee usee krega ddos bhaag yaha se aur kharid isse @AnandDalla😁
 
     bot.reply_to(message, response)
 
@@ -341,13 +341,13 @@ def show_command_logs(message):
         except FileNotFoundError:
             response = "No command logs found."
     else:
-        response = "You Are Not Authorized To Use This Command 😡."
+        response = "L*nd karega use bsdk bhaag 😡."
 
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['help'])
 def show_help(message):
-    help_text ='''🤖 Available commands:
+    help_text ='''🤖 Maa ka bhosdaaa L*nd karega usee command nhi jaantaa madharchorr chl btadeta hu kya yaad rkhega commands:
 💥 /bgmi : Method For Bgmi Servers. 
 💥 /rules : Please Check Before Use !!.
 💥 /mylogs : To Check Your Recents Attacks.
@@ -381,7 +381,7 @@ def welcome_start(message):
 @bot.message_handler(commands=['rules'])
 def welcome_rules(message):
     user_name = message.from_user.first_name
-    response = f'''{user_name} Please Follow These Rules ⚠️:
+    response = f'''{user_name} Bsdk chlaaanaaa aataa nhi aur chala hai ddos banaane bhosdiyawalaa chl koi tu dost h apna btadete hai Rules ⚠️:
 
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot.
@@ -400,9 +400,9 @@ Vip 🌟 :
 -> Concurrents Attack : 5
 
 Pr-ice List💸 :
-Day-->80 Rs
-Week-->400 Rs
-Month-->1000 Rs
+Day-->8000000000000000 Crore Rs
+Week-->9999999999999Trillion $
+Month-->Aukaat se baharr h
 '''
     bot.reply_to(message, response)
 
@@ -437,9 +437,9 @@ def broadcast_message(message):
                         print(f"Failed to send broadcast message to user {user_id}: {str(e)}")
             response = "Broadcast Message Sent Successfully To All Users 👍."
         else:
-            response = "🤖 Please Provide A Message To Broadcast."
+            response = "🤖 Kyaa broadcast karegaaa bhadweee."
     else:
-        response = "Only Admin Can Run This Command 😡."
+        response = "Bsdk l*nd karega mera use Phle admin ban fir use krna 😡."
 
     bot.reply_to(message, response)
 
