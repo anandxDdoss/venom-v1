@@ -320,7 +320,7 @@ def handle_bgmi(message):
         else:
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
-        response = ("🚫 Unauthorized Access! 🚫\n\nBsdk kharidaa nhi aur bhadwee usee krega ddos bhaag yaha se aur kharid isse @AnandDalla😁
+        response = ("🚫 Unauthorized Access! 🚫\n\nBsdk kharidaa nhi aur bhadwee usee krega ddos bhaag yaha se aur kharid isse @AnandDalla😁")
 
     bot.reply_to(message, response)
 
